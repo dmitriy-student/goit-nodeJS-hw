@@ -18,7 +18,7 @@ async function invokeAction({ action, id, name, email, phone }) {
 
     case "get":
       const contact = Contacts.getContactById(id);
-      return contacts;
+      return contact;
 
     case "add":
       const newContact = Contacts.addContact(name, email, phone);
